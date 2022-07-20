@@ -21,8 +21,7 @@ public class WeatherForecastController : ControllerBase
 
         var searchPaths = engine.GetSearchPaths();
         // ПУТЬ ДО ПАКЕТОВ PYTHON
-        //searchPaths.Add(@"C:\Python27\Lib\site-packages");
-        searchPaths.Add("/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages");
+        searchPaths.Add(@"C:\Python27\Lib\site-packages");
         engine.SetSearchPaths(searchPaths);
 
         var scope = engine.CreateScope();
