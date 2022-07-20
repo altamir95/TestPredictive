@@ -8,6 +8,10 @@ namespace TestPredictive.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
+    // MAC OS EXAMPLE - \Library\Frameworks\Python.framework\Versions\2.7\lib\python2.7\site-packages
+    // WINDOWS EXAMPLE - C:\Python27\Lib\site-packages
+    private readonly string _searchPath = @"--ЗДЕСЬ ПУТЬ ДО ПАКЕТОВ PYTHON--";
+
     private static readonly string _scriptDir = @"Files";
     private static readonly string _scriptName = @"script.py";
     private static readonly string _pythonScriptPath =
@@ -20,8 +24,7 @@ public class WeatherForecastController : ControllerBase
         ScriptEngine engine = Python.CreateEngine();
 
         var searchPaths = engine.GetSearchPaths();
-        // ПУТЬ ДО ПАКЕТОВ PYTHON
-        searchPaths.Add(@"C:\Python27\Lib\site-packages");
+        searchPaths.Add(_searchPath);
         engine.SetSearchPaths(searchPaths);
 
         var scope = engine.CreateScope();
@@ -32,4 +35,3 @@ public class WeatherForecastController : ControllerBase
         return res;
     }
 }
-
