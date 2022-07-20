@@ -8,9 +8,9 @@ namespace TestPredictive.Controllers;
 [Route("[controller]")]
 public class PredicriveController : ControllerBase
 {
-    // MAC OS EXAMPLE - \Library\Frameworks\Python.framework\Versions\2.7\lib\python2.7\site-packages
+    // MAC OS EXAMPLE - /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
     // WINDOWS EXAMPLE - C:\Python27\Lib\site-packages
-    private readonly string _searchPath = @"\Library\Frameworks\Python.framework\Versions\2.7\lib\python2.7\site-packages";
+    private readonly string _searchPath = "__ЗдесьМодуль__";
 
     private static readonly string _scriptDir = @"Files";
     private static readonly string _scriptName = @"script.py";
