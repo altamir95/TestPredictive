@@ -23,8 +23,7 @@
 ## Инструмент IronPython для установки пакетов
 Конечно же IronPython позаботились о своем НЕ РАБОЧЕМ инструменте для установки модулей python.
 Вы можете испробовать его на своей машине.
-(Здесь официальная инструкция)[https://ironpython.net/blog/2014/12/07/pip-in-ironpython-275.html]
-Правила пользования слудующие.
+Правила пользования слудующие ([официальная инструкция](https://ironpython.net/blog/2014/12/07/pip-in-ironpython-275.html)):
 - Если вы работаете под последняя стабильная версия (IronPython2.7.12)[https://ironpython.net/]:
   - Устанавливаете IronPython с [его аккаунта GitHub](https://github.com/IronLanguages/ironpython2/releases/download/ipy-2.7.12/IronPython-2.7.12.msi)
   - Находясь под дерективой IronPython (в моем случае "C:Program Files\IronPython2.7") запускаете команды 
