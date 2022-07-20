@@ -50,6 +50,5 @@ def predict():
                     df_prediction = df_prediction.append(new_row, ignore_index=True)
 
     return df_prediction.to_json(orient="records")
-    return python_version()
 
 print(predict())

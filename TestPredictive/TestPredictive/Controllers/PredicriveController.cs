@@ -6,11 +6,11 @@ namespace TestPredictive.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class PredicriveController : ControllerBase
 {
     // MAC OS EXAMPLE - \Library\Frameworks\Python.framework\Versions\2.7\lib\python2.7\site-packages
     // WINDOWS EXAMPLE - C:\Python27\Lib\site-packages
-    private readonly string _searchPath = @"--ЗДЕСЬ ПУТЬ ДО ПАКЕТОВ PYTHON--";
+    private readonly string _searchPath = @"\Library\Frameworks\Python.framework\Versions\2.7\lib\python2.7\site-packages";
 
     private static readonly string _scriptDir = @"Files";
     private static readonly string _scriptName = @"script.py";
