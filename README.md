@@ -30,7 +30,7 @@
     - ipy -X:Frames -m ensurepip
     - ipy -X:Frames -m pip install html5lib
   - Экспериментально установленный пакет html5lib прервался с ошибками.
-- Если вы работаете под beta стабильная версия (IronPython3.4.0)[https://ironpython.net/]:
+- Если вы работаете под beta стабильная версия [IronPython3.4.0](https://ironpython.net/):
   - Устанавливаете IronPython с [его аккаунта GitHub](https://github.com/IronLanguages/ironpython3/releases/download/v3.4.0-beta1/IronPython-3.4.0b1.msi)
   - Находясь под дерективой IronPython (в моем случае "C:Program Files\IronPython3.4") запускаете команды 
     - ipy -X:Frames -m ensurepip
